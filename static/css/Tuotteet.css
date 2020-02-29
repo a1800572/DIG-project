@@ -1,0 +1,1259 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background-image:url(../images/pillar%201.png) ,url(../images/pillar%201.png);
+    background-repeat: no-repeat;
+    background-position:left,right;
+    background-size: 250px 2000px;
+}
+.header {
+    background-image: url(static/images/star.gif);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    text-align: center;
+}
+.center{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul2 li{
+    list-style:none;
+    color: mediumpurple;
+    font-size: 6em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    text-shadow: 6px 6px black;
+    font-family:serif;
+}
+ul2:hover li
+{
+    animation: animate 2s linear forwards;   
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+        filter: blur(1px);
+    }
+    100%
+    {
+        transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+        filter: blur(20px);
+    }
+}
+ul2 li:nth-child(1)
+{
+    animation-delay: 0s;
+}
+ul2 li:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+ul2 li:nth-child(3)
+{
+    animation-delay: 0.8s;
+}
+ul2 li:nth-child(4)
+{
+    animation-delay: 1.2s;
+}
+ul2 li:nth-child(5)
+{
+    animation-delay: 1.6s;
+}
+ul2 li:nth-child(6)
+{
+    animation-delay: 2.0s;
+}
+ul2 li:nth-child(7)
+{
+    animation-delay: 2.4s;
+}
+ul2 li:nth-child(8)
+{
+    animation-delay: 2.8s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+}
+nav ul li:hover{
+    background-color: #f39d1a;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+    color: #fff;
+    padding: 30px;
+}
+.container{
+    flex: 1;
+    order: 1;
+    background-color: ghostwhite;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    height: 200%;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.sidebar-one{
+    flex: 1;
+    order: 1;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: left;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+
+}
+div.sidebar-one a {
+    float: right;
+    width: 100%
+}
+div.sidebar-one a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-one a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+
+}
+div.sidebar-one a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-one a.name:hover{
+    color: red;
+}
+div.sidebar-one div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-one a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url() 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-one a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-one span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-one:hover span{
+    background-color: red;
+}
+div.sidebar-one:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-ten{
+    flex: 1;
+    order: 1;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: left;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-ten a {
+    float: right;
+    width: 100%
+}
+div.sidebar-ten a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-ten a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-ten a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-ten a.name:hover{
+    color: red;
+}
+div.sidebar-ten div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-ten a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-ten a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-ten span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-ten:hover span{
+    background-color: red;
+}
+div.sidebar-ten:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-two{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-two a {
+    float: right;
+    width: 100%
+}
+div.sidebar-two a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-two a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-two a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-two a.name:hover{
+    color: red;
+}
+div.sidebar-two div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-two a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-two a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-two span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-two:hover span{
+    background-color: red;
+}
+div.sidebar-two:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-three{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-three a {
+    float: right;
+    width: 100%
+}
+div.sidebar-three a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-three a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-three a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-three a.name:hover{
+    color: red;
+}
+div.sidebar-three div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-three a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-three a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-three span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-three:hover span{
+    background-color: red;
+}
+div.sidebar-three:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-four{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-four a {
+    float: right;
+    width: 100%
+}
+div.sidebar-four a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-four a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-four a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-four a.name:hover{
+    color: red;
+}
+div.sidebar-four div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-four a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-four a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-four span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-four:hover span{
+    background-color: red;
+}
+div.sidebar-four:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-five{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: left;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-five a {
+    float: right;
+    width: 100%
+}
+div.sidebar-five a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-five a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-five a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-five a.name:hover{
+    color: red;
+}
+div.sidebar-five div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-five a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-five a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-five span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-five:hover span{
+    background-color: red;
+}
+div.sidebar-five:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-six{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: left;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-six a {
+    float: right;
+    width: 100%
+}
+div.sidebar-six a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-six a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-six a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-six a.name:hover{
+    color: red;
+}
+div.sidebar-six div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-six a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-six a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-six span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-six:hover span{
+    background-color: red;
+}
+div.sidebar-six:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-seven{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-seven a {
+    float: right;
+    width: 100%
+}
+div.sidebar-seven a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-seven a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-seven a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-seven a.name:hover{
+    color: red;
+}
+div.sidebar-seven div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-seven a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-seven a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-seven span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-seven:hover span{
+    background-color: red;
+}
+div.sidebar-seven:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-eight{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-eight a {
+    float: right;
+    width: 100%
+}
+div.sidebar-eight a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-eight a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-eight a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-eight a.name:hover{
+    color: red;
+}
+div.sidebar-eight div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-eight a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-eight a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-eight span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-eight:hover span{
+    background-color: red;
+}
+div.sidebar-eight:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-nine{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-nine a {
+    float: right;
+    width: 100%
+}
+div.sidebar-nine a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-nine a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-nine a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-nine a.name:hover{
+    color: red;
+}
+div.sidebar-nine div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-nine a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-nine a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-nine span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+
+}
+div.sidebar-nine:hover span{
+    background-color: red;
+}
+div.sidebar-nine:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-eleven{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-eleven a {
+    float: right;
+    width: 100%
+}
+div.sidebar-eleven a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-eleven a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-eleven a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-eleven a.name:hover{
+    color: red;
+}
+div.sidebar-eleven div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-eleven a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-eleven a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-eleven span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-eleven:hover span{
+    background-color: red;
+}
+div.sidebar-eleven:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.sidebar-twelve{
+    flex: 1;
+    order: 3;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 110%;
+    float: right;
+    width: 239px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+div.sidebar-twelve a {
+    float: right;
+    width: 100%
+}
+div.sidebar-twelve a.img {
+    text-align: center;
+    margin-top: 10px;
+}
+div.sidebar-twelve a.img img{
+    height: 200px;
+    max-width: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+div.sidebar-twelve a.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+div.sidebar-twelve a.name:hover{
+    color: red;
+}
+div.sidebar-twelve div{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-indent: 10px;
+    margin 10px 0 10px 0;
+    float: right;
+    width: 100%;
+}
+div.sidebar-twelve a.cart{
+    border-top: red 1px solid;
+    background: white; background-image: url(static/images/cart.png) 30% 2px no-repeat;
+    line-height: 50px;
+    font-weight: bold; color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+div.sidebar-twelve a.cart:hover{
+    background-color: black;
+    color: white
+}
+div.sidebar-twelve span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px; font-weight: bold;
+    text-shadow: 0 0 3px yellow;
+}
+div.sidebar-twelve:hover span{
+    background-color: red;
+}
+div.sidebar-twelve:hover a.img img{
+    opacity: 0.7:/*css 3*/
+}
+.footer{
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: darkviolet;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+.handle{
+    width: 100%;
+    background: #312e2e;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+@media screen and (max-width: 500px){
+    nav ul {
+        max-height: 0;
+    }
+    .showing{
+        max-height: 20em;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+        background-color: black;
+    }
+    .handle{
+        display: block;
+    }
+    .container{
+        top: 110%;
+        width: 100%;
+        height: 690%;
+        margin: 0 auto;
+    }
+    .sidebar-one{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-ten{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-two{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-three{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-four{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-five{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-six{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-seven{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-eight{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-nine{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-eleven{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .sidebar-twelve{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .center{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 43%;
+    }
+}
